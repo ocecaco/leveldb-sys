@@ -8,7 +8,7 @@ repository = "https://github.com/skade/leveldb-sys"
 documentation = "https://docs.rs/leveldb-sys/"
 license = "MIT"
 
-build = "src/build.rs"
+build = "build.rs"
 links = "leveldb"
 
 [dependencies]
