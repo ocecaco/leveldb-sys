@@ -27,7 +27,9 @@ pub enum leveldb_writeoptions_t {}
 #[derive(Copy,Clone)]
 pub enum Compression {
   No = 0,
-  Snappy = 1
+  Snappy = 1,
+  Zlib = 2,
+  ZlibRaw = 4,
 }
 
 extern "C" {

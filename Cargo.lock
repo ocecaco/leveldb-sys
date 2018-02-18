@@ -1,4 +1,4 @@
-[root]
+[[package]]
 name = "leveldb-sys"
 version = "2.0.1"
 dependencies = [

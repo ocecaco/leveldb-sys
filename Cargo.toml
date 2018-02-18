@@ -11,9 +11,6 @@ license = "MIT"
 build = "src/build.rs"
 links = "leveldb"
 
-[features]
-snappy = []
-
 [dependencies]
 libc = "0.2.*"
 
