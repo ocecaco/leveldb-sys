@@ -116,8 +116,8 @@ extern "C" {
     pub fn leveldb_iter_seek(it: *mut leveldb_iterator_t, k: *const c_char, klen: size_t);
     pub fn leveldb_iter_next(it: *mut leveldb_iterator_t);
     pub fn leveldb_iter_prev(it: *mut leveldb_iterator_t);
-    pub fn leveldb_iter_key(it: *const leveldb_iterator_t, klen: *const size_t) -> *const c_char;
-    pub fn leveldb_iter_value(it: *const leveldb_iterator_t, vlen: *const size_t) -> *const c_char;
+    pub fn leveldb_iter_key(it: *const leveldb_iterator_t, klen: *mut size_t) -> *const c_char;
+    pub fn leveldb_iter_value(it: *const leveldb_iterator_t, vlen: *mut size_t) -> *const c_char;
     pub fn leveldb_iter_get_error(it: *const leveldb_iterator_t, errptr: *const *const c_char);
 
     // Write batch
