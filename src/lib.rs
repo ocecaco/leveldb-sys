@@ -1,7 +1,8 @@
+#![warn(clippy::all)]
 #![allow(non_camel_case_types, non_upper_case_globals, non_snake_case)]
 
-use libc::{c_char, c_int, c_uchar, c_void};
 use libc::size_t;
+use libc::{c_char, c_int, c_uchar, c_void};
 
 // These are opaque types that LevelDB uses.
 pub enum leveldb_t {}
